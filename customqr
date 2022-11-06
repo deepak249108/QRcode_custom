@@ -1,0 +1,10 @@
+import qrcode
+import image
+
+deepak=qrcode.QRCode()
+print("enter your url :")
+data=input()
+deepak.add_data(data)
+deepak.make(fit=True)
+img=deepak.make_image()
+img.save("test.png")
